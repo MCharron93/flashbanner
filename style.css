@@ -10,10 +10,10 @@ main {
 .banner{
     color: #f2dc5d ;
     padding-left: 1rem;
-    /* padding-right: 1rem; */
-    /* padding-top: 4px; */
+    padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 0rem;
+    text-transform: uppercase;
 }
 
 .timer{
@@ -21,9 +21,44 @@ main {
 }
 
 @media (max-width: 600px) {
+    h4{
+        font-size: 1.15rem;
+    }
+    
     .banner {
         padding-left: 1px;
-        padding-right: 1px;
-        padding-top: 2px;
     }
+
+    #countdown {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+#countdown {
+    padding-left: 1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0rem;
+    justify-content: center;
+}
+
+i {
+    animation-name: bolt;
+    color: #f2dc5d;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bolt {
+    0% {color: #f2dc5d;}
+    15% {color: green;}
+    30% {color: blue;}
+    45% {color: rgb(43, 0, 128);}
+    60% {color: red;}
+    75% {color: orange;}
+    90% {color: yellow;}
+    100% {color: #f2dc5d}
 }

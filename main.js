@@ -32,7 +32,7 @@ function timer() {
 //   pad(days) + ":" + 
 // pad(hours) + " hours "
 
-  document.getElementById('countdown').innerHTML =  pad(minutes) + " minutes " + pad(remainingSeconds) + " seconds";
+  document.getElementById('countdown').innerHTML =  pad(minutes) + ":" + pad(remainingSeconds);
   if (seconds == 0) {
     clearInterval(countdownTimer);
     document.getElementById('countdown').innerHTML = "Completed";
