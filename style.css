@@ -1,3 +1,18 @@
 /* * {
     border: 1px solid gray;
 } */
+
+main {
+    /* background-color: #990d35; */
+    background-color: #8c2155 ;
+}
+
+.banner{
+    color: #f2dc5d ;
+    text-align: end;
+}
+
+.timer{
+    color: #f2dc5d ;
+    text-align: start;
+}
