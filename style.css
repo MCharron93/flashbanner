@@ -11,7 +11,9 @@ main {
     color: #f2dc5d ;
     padding-left: 1rem;
     padding-right: 1rem;
-    
+    /* padding-top: 4px; */
+    padding-bottom: 4px;
+    margin-bottom: 0rem;
 }
 
 .timer{
@@ -20,7 +22,8 @@ main {
 
 @media (max-width: 600px) {
     .banner {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 2px;
     }
 }
