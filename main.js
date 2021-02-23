@@ -30,8 +30,9 @@ function timer() {
 
 //   NOTE removed the timer slots for days since it will not be used
 //   pad(days) + ":" + 
-  
-  document.getElementById('countdown').innerHTML = pad(hours) + ":" + pad(minutes) + ":" + pad(remainingSeconds);
+// pad(hours) + " hours "
+
+  document.getElementById('countdown').innerHTML =  pad(minutes) + " minutes " + pad(remainingSeconds) + " seconds";
   if (seconds == 0) {
     clearInterval(countdownTimer);
     document.getElementById('countdown').innerHTML = "Completed";

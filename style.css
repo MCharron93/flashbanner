@@ -10,7 +10,7 @@ main {
 .banner{
     color: #f2dc5d ;
     padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
     /* padding-top: 4px; */
     padding-bottom: 4px;
     margin-bottom: 0rem;
