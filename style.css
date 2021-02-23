@@ -9,8 +9,18 @@ main {
 
 .banner{
     color: #f2dc5d ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }
 
 .timer{
     color: #f2dc5d ;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
