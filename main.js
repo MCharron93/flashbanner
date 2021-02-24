@@ -33,6 +33,7 @@ function timer() {
 // pad(hours) + " hours "
 
   document.getElementById('countdown').innerHTML =  pad(minutes) + ":" + pad(remainingSeconds);
+  // document.getElementById('countdown').innerHTML += `<i class="fas fa-bolt px-2 pt-2"></i>`
   if (seconds == 0) {
     clearInterval(countdownTimer);
     document.getElementById('countdown').innerHTML = "Completed";
