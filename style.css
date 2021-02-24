@@ -3,13 +3,22 @@
 } */
 
 main {
-    /* background-color: #990d35; */
-    background-color: #8c2155 ;
+    background-color: #7f055f ;
+}
+
+.custom-col-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-col-2{
+    display: flex;
+    justify-content: start;
 }
 
 .banner{
-    color: #f2dc5d ;
-    padding-left: 1rem;
+    color: fcdc4d ;
+    /* padding-left: 1rem; */
     padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 0rem;
@@ -20,13 +29,24 @@ main {
 
 .banner-end{
     padding-top: 6px;
+    padding-left: 8px;
 }
 
 .timer{
-    color: #f2dc5d ;
+    color: #fcdc4d ;
 }
 
 @media (max-width: 600px) {
+
+    .custom-col-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-col-2{
+        display: flex;
+        justify-content: center;
+    }
 
     .banner {
         padding-left: 1px;
@@ -35,11 +55,12 @@ main {
 
     .banner-end{
         padding-top: 4px;
+        justify-content: center;
+        display: flex;
     }
 
     #countdown {
         padding-left: 1px;
-        padding-right: 1px;
         font-size: 0.85rem !important;
 
     }
@@ -56,19 +77,19 @@ main {
 
 i {
     animation-name: bolt;
-    color: #f2dc5d;
+    color: #d7d7d7;
     animation-delay: 1s;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
 @keyframes bolt {
-    0% {color: #f2dc5d;}
+    0% {color: #d7d7d7;}
     15% {color: green;}
     30% {color: blue;}
     45% {color: rgb(43, 0, 128);}
-    60% {color: red;}
-    75% {color: orange;}
+    60% {color: rgb(196, 0, 0);}
+    75% {color: rgb(249, 75, 0);}
     90% {color: yellow;}
-    100% {color: #f2dc5d}
+    100% {color: #d7d7d7}
 }
