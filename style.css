@@ -41,6 +41,7 @@ main {
     .custom-col-1{
         display: flex;
         justify-content: center;
+        offset: none;
     }
 
     .custom-col-2{
