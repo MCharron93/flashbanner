@@ -67,9 +67,10 @@ i {
 /* NOTE All formatting for sm devices is completed */
 @media (max-width: 760px) {
 
-    main {
+    /* NOTE used different coloured backgrounds to determine sizing */
+    /* main {
         background-color: #33dffd ;
-    }
+    } */
 
     .custom-col-1{
         display: flex;
@@ -86,7 +87,8 @@ i {
         padding-left: 1px;
         font-size: 10pt !important;
         
-        color: black !important;
+        /* NOTE alternate font colours for diff. backgrounds */
+        /* color: black !important; */
     }
 
 
@@ -100,7 +102,8 @@ i {
         padding-left: 1px;
         font-size: 10pt !important;
 
-        color: black !important;
+        /* NOTE alternate font colours for diff. backgrounds */
+        /* color: black !important; */
 
     }
 }
@@ -108,10 +111,11 @@ i {
 /* NOTE All formatting for xs mobile devices is completed */
 @media (max-width: 390px) {
 
-    main {
+    /* NOTE used different background colour to determine sizing */
+    /* main {
        
         background-color: #33fd33 !important;
-    }
+    } */
 
     .fas.fa-bolt{
         padding-left: 4.5px !important;
@@ -134,8 +138,8 @@ i {
         padding-bottom: 0;
         font-size: 8pt !important;
 
-
-        color: black !important;
+        /* NOTE alternate font colours for diff. backgrounds */
+        /* color: black !important; */
 
     }
 
@@ -149,7 +153,7 @@ i {
         padding-left: 1px;
         font-size: 8pt !important;
 
-
-        color: black !important;
+        /* NOTE alternate font colours for diff. backgrounds */
+        /* color: black !important; */
     }
 }
