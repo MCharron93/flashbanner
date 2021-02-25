@@ -65,9 +65,11 @@ i {
 
 /* NOTE media queries for responsive design */
 @media screen and (max-width: 1035px){
-    main {
+    
+    /* NOTE custom background colour added to test different sizes */
+    /* main {
         background-color: #9f33fd ;
-    }
+    } */
     
     .custom-col-1{
         display: flex;
@@ -160,7 +162,7 @@ i {
 }
 
 /* NOTE All formatting for xs mobile devices is completed */
-@media (max-width: 420px) {
+@media (max-width: 446px) {
 
     /* NOTE used different background colour to determine sizing */
     /* main {
@@ -173,15 +175,12 @@ i {
         padding-right: 4.5px !important;
     }
 
-    .custom-col-1{
+    .custom-col{
         display: flex;
         justify-content: center;
-        offset: none;
-    }
-
-    .custom-col-2{
-        display: flex;
-        justify-content: center;
+        max-width: none;
+        width: auto;
+        flex-basis: auto;
     }
 
     .banner {
