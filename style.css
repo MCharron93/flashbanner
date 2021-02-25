@@ -6,15 +6,14 @@ main {
     background-color: #fd3398 ;
 }
 
-.custom-col-1{
+.custom-col{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    max-width: none;
+    width: auto;
+    flex-basis: auto;
 }
 
-.custom-col-2{
-    display: flex;
-    justify-content: start;
-}
 
 .banner{
     color: #fcdc4d ;
@@ -65,7 +64,7 @@ i {
 }
 
 /* NOTE media queries for responsive design */
-@media (max-width: 1035px){
+@media screen and (max-width: 1035px){
     main {
         background-color: #9f33fd ;
     }
@@ -119,7 +118,7 @@ i {
         background-color: #33dffd ;
     } */
     .col {
-        max-width: 0 !important;
+        max-width: none !important;
     }
 
     .custom-col-1{
