@@ -64,13 +64,63 @@ i {
     100% {color: #d7d7d7}
 }
 
+/* NOTE media queries for responsive design */
+@media (max-width: 1035px){
+    main {
+        background-color: #9f33fd ;
+    }
+    
+    .custom-col-1{
+        display: flex;
+        justify-content: center;
+        offset: none !important;
+    }
+    
+    .custom-col-2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner{
+        color: #fcdc4d ;
+        padding-top: 4px;
+        padding-bottom: 0 !important;
+        margin-bottom: 0rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    
+    }
+    
+    .banner-end{
+        padding-top: 6px;
+        padding-left: 4px;
+    }
+    
+    .timer{
+        color: #fcdc4d ;
+    }
+    
+    
+    #countdown {
+        padding-left: 1rem;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-bottom: 0rem;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}
+
 /* NOTE All formatting for sm devices is completed */
-@media (max-width: 760px) {
+@media (max-width: 800px) {
 
     /* NOTE used different coloured backgrounds to determine sizing */
     /* main {
         background-color: #33dffd ;
     } */
+    .col {
+        max-width: 0 !important;
+    }
 
     .custom-col-1{
         display: flex;
@@ -85,8 +135,9 @@ i {
 
     .banner{
         padding-left: 1px;
-        font-size: 10pt !important;
-        
+        padding-bottom: 0;
+        font-size: 12pt !important;
+
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
     }
@@ -99,8 +150,9 @@ i {
     }
 
     #countdown {
-        padding-left: 1px;
-        font-size: 10pt !important;
+        padding-left: 10px;
+        padding-top: 6px;
+        font-size: 12pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
@@ -109,7 +161,7 @@ i {
 }
 
 /* NOTE All formatting for xs mobile devices is completed */
-@media (max-width: 390px) {
+@media (max-width: 420px) {
 
     /* NOTE used different background colour to determine sizing */
     /* main {
@@ -150,7 +202,8 @@ i {
     }
 
     #countdown {
-        padding-left: 1px;
+        padding-left: 6px;
+        padding-top: 5px;
         font-size: 8pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
