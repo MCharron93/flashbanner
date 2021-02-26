@@ -6,6 +6,10 @@ main {
     background-color: #fd3398 ;
 }
 
+p {
+    color: #ffff00;
+}
+
 .custom-col{
     display: flex;
     justify-content: center;
@@ -16,7 +20,6 @@ main {
 
 
 .banner{
-    color: #fcdc4d ;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 0rem;
@@ -59,7 +62,7 @@ i {
     45% {color: rgb(43, 0, 128);}
     60% {color: rgb(196, 0, 0);}
     75% {color: rgb(249, 75, 0);}
-    90% {color: yellow;}
+    90% {color: #ffff00;}
     100% {color: #d7d7d7}
 }
 
@@ -83,7 +86,6 @@ i {
     }
     
     .banner{
-        color: #fcdc4d ;
         padding-top: 4px;
         padding-bottom: 0 !important;
         margin-bottom: 0rem;
@@ -97,9 +99,9 @@ i {
         padding-left: 4px;
     }
     
-    .timer{
+    /* .timer{
         color: #fcdc4d ;
-    }
+    } */
     
     
     #countdown {
