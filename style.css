@@ -74,17 +74,6 @@ i {
         background-color: #9f33fd ;
     } */
     
-    .custom-col-1{
-        display: flex;
-        justify-content: center;
-        offset: none !important;
-    }
-    
-    .custom-col-2{
-        display: flex;
-        justify-content: center;
-    }
-    
     .banner{
         padding-top: 4px;
         padding-bottom: 0 !important;
@@ -98,11 +87,6 @@ i {
         padding-top: 6px;
         padding-left: 4px;
     }
-    
-    /* .timer{
-        color: #fcdc4d ;
-    } */
-    
     
     #countdown {
         padding-left: 1rem;
@@ -123,17 +107,6 @@ i {
     } */
     .col {
         max-width: none !important;
-    }
-
-    .custom-col-1{
-        display: flex;
-        justify-content: center;
-        offset: none;
-    }
-
-    .custom-col-2{
-        display: flex;
-        justify-content: center;
     }
 
     .banner{
@@ -164,7 +137,7 @@ i {
 }
 
 /* NOTE All formatting for xs mobile devices is completed */
-@media (max-width: 446px) {
+@media (max-width: 550px) {
 
     /* NOTE used different background colour to determine sizing */
     /* main {
