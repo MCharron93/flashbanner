@@ -29,7 +29,7 @@ p {
 }
 
 .banner-end{
-    padding-top: 6px;
+    padding-top: 4px;
     padding-left: 8px;
 }
 
@@ -45,6 +45,10 @@ p {
     margin-bottom: 0rem;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+.custom-top{
+    padding-top: 6px;
 }
 
 i {
@@ -90,11 +94,14 @@ i {
     
     #countdown {
         padding-left: 1rem;
-        padding-top: 4px;
         padding-bottom: 4px;
         margin-bottom: 0rem;
         justify-content: center;
         font-size: 1.5rem;
+    }
+
+    .custom-top{
+        padding-top: 4px;
     }
 }
 
@@ -112,7 +119,7 @@ i {
     .banner{
         padding-left: 1px;
         padding-bottom: 0;
-        font-size: 12pt !important;
+        font-size: 10pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
@@ -127,8 +134,7 @@ i {
 
     #countdown {
         padding-left: 10px;
-        padding-top: 6px;
-        font-size: 12pt !important;
+        font-size: 10pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
@@ -159,13 +165,10 @@ i {
     }
 
     .banner {
-        padding-left: 1px;
-        padding-bottom: 0;
         font-size: 8pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
-
     }
 
     .banner-end{
@@ -176,10 +179,13 @@ i {
 
     #countdown {
         padding-left: 6px;
-        padding-top: 5px;
         font-size: 8pt !important;
 
         /* NOTE alternate font colours for diff. backgrounds */
         /* color: black !important; */
+    }
+
+    .custom-top{
+        padding-top: 3px;
     }
 }
