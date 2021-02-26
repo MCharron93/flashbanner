@@ -10,6 +10,25 @@ p {
     color: #ffff00;
 }
 
+i {
+    animation-name: bolt;
+    color: #d7d7d7;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bolt {
+    0% {color: #d7d7d7;}
+    15% {color: green;}
+    30% {color: blue;}
+    45% {color: rgb(43, 0, 128);}
+    60% {color: rgb(196, 0, 0);}
+    75% {color: rgb(249, 75, 0);}
+    90% {color: #ffff00;}
+    100% {color: #d7d7d7}
+}
+
 .custom-col{
     display: flex;
     justify-content: center;
@@ -33,10 +52,6 @@ p {
     padding-left: 8px;
 }
 
-.timer{
-    color: #fcdc4d ;
-}
-
 
 #countdown {
     padding-left: 1rem;
@@ -51,24 +66,6 @@ p {
     padding-top: 6px;
 }
 
-i {
-    animation-name: bolt;
-    color: #d7d7d7;
-    animation-delay: 1s;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes bolt {
-    0% {color: #d7d7d7;}
-    15% {color: green;}
-    30% {color: blue;}
-    45% {color: rgb(43, 0, 128);}
-    60% {color: rgb(196, 0, 0);}
-    75% {color: rgb(249, 75, 0);}
-    90% {color: #ffff00;}
-    100% {color: #d7d7d7}
-}
 
 /* NOTE media queries for responsive design */
 @media screen and (max-width: 1035px){
