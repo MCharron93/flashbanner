@@ -6,15 +6,10 @@
             // NOTE the banner should contain icons to give it some brand feel
 
 // NOTE created function that runs a simple window alert every 5 seconds. This could be used to create time and clock to display for flash sale in banner
-// function runTimer(){
-//     window.alert("Hello User")
-// }
-
-// setInterval(runTimer, 5000)
 
 function checkTime(){
   // NOTE created sale start time to compare current date & time to 
-  const saleStarts = new Date(2021, 2, 1, 11, 55, 0)
+  const saleStarts = new Date(2021, 2, 1, 8, 05, 0)
   let currentDate = new Date()
   // NOTE create end sale time to compare current date & time to for difference in time conversion
   const saleEnds = new Date(2021, 2, 1, 10, 05, 0)
@@ -49,9 +44,8 @@ function timer(milliseconds) {
 
 //   NOTE removed the timer slots for days since it will not be used
 //   pad(days) + ":" + 
-// 
 
-  document.getElementById('countdown').innerHTML = pad(days) + " days" + pad(hours) + " hours " + pad(minutes) + " minutes" + pad(remainingSeconds) +" seconds";
+  document.getElementById('countdown').innerHTML = pad(hours) + " hours " + pad(minutes) + " minutes " + pad(remainingSeconds) +" seconds";
   console.log(days, hours, minutes, remainingSeconds)
 
   if (seconds == 0) {
