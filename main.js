@@ -12,12 +12,31 @@
 
 // setInterval(runTimer, 5000)
 
-// NOTE timer function that counts down from 1 hour
+function checkTime(){
+  // NOTE created sale start time to compare current date & time to 
+  const saleStarts = new Date(2021, 2, 1, 11, 55, 0)
+  let currentDate = new Date()
+  // NOTE create end sale time to compare current date & time to for difference in time conversion
+  const saleEnds = new Date(2021, 2, 1, 10, 05, 0)
+
+
+  // NOTE compare if the currentDate is after saleStart time and before the saleEnd time
+  // NOTE call timer and pass milliseconds to timer
+  if(currentDate >= saleStarts && currentDate <= saleEnds){
+    let milliseconds = saleEnds - currentDate
+    timer(milliseconds)
+  }
+
+}
+
 
 // NOTE first create the total amount of time to start at
-var saleTime = 3600;
-var seconds = saleTime;
-function timer() {
+function timer(milliseconds) {
+  
+  var saleTime = milliseconds;
+  var seconds = Math.floor(saleTime/1000);
+  
+
   var days        = Math.floor(seconds/24/60/60);
   var hoursLeft   = Math.floor((seconds) - (days*86400));
   var hours       = Math.floor(hoursLeft/3600);
@@ -30,10 +49,11 @@ function timer() {
 
 //   NOTE removed the timer slots for days since it will not be used
 //   pad(days) + ":" + 
-// pad(hours) + " hours "
+// 
 
-  document.getElementById('countdown').innerHTML =  pad(minutes) + ":" + pad(remainingSeconds);
-  // document.getElementById('countdown').innerHTML += `<i class="fas fa-bolt px-2 pt-2"></i>`
+  document.getElementById('countdown').innerHTML = pad(days) + " days" + pad(hours) + " hours " + pad(minutes) + " minutes" + pad(remainingSeconds) +" seconds";
+  console.log(days, hours, minutes, remainingSeconds)
+
   if (seconds == 0) {
     clearInterval(countdownTimer);
     document.getElementById('countdown').innerHTML = "Completed";
@@ -41,4 +61,4 @@ function timer() {
     seconds--;
   }
 }
-var countdownTimer = setInterval('timer()', 1000);
+var countdownTimer = setInterval("checkTime()", 1000);
