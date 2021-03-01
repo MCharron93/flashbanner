@@ -4,12 +4,20 @@
     color: #ffff00;
 }
 
+.pd-y{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 .fas.fa-bolt {
     animation-name: bolt;
     color: #d7d7d7;
     animation-delay: 1s;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 @keyframes bolt {
@@ -40,13 +48,8 @@
 
 }
 
-.bnr-end{
-    padding-left: 4px;
-}
-
-
 #countdown {
-    padding-left: 1rem;
+    padding-left: 4px;
     padding-bottom: 4px;
     margin-bottom: 0rem;
     justify-content: center;
@@ -69,12 +72,7 @@
     
     }
     
-    .bnr-end{
-        padding-left: 4px;
-    }
-    
     #countdown {
-        padding-left: 1rem;
         padding-bottom: 4px;
         margin-bottom: 0rem;
         justify-content: center;
@@ -86,7 +84,7 @@
 /* NOTE All formatting for sm devices is completed */
 @media (max-width: 800px) {
 
-    .col {
+    .mw {
         max-width: none !important;
     }
 
@@ -102,18 +100,12 @@
     }
 
     #countdown {
-        padding-left: 4px;
         font-size: 18px !important;
     }
 }
 
 /* NOTE All formatting for xs mobile devices is completed */
 @media (max-width: 550px) {
-
-    .fas.fa-bolt{
-        padding-left: 2px !important;
-        padding-right: 2px !important;
-    }
 
     .custom-col{
         display: flex;
@@ -122,19 +114,4 @@
         width: auto;
         flex-basis: auto;
     }
-
-    .bnr {
-        font-size: 18px !important;
-    }
-
-    .bnr-end{
-        justify-content: center;
-        display: flex;
-    }
-
-    #countdown {
-        padding-left: 4px;
-        font-size: 18px !important;
-    }
-
 }
