@@ -79,7 +79,7 @@
 }
 
 /* NOTE All formatting for sm devices is completed */
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 
     .mw {
         max-width: none !important;
