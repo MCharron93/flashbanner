@@ -46,7 +46,6 @@ function timer(milliseconds) {
 //   pad(days) + ":" + 
 
   document.getElementById('countdown').innerHTML = pad(hours) + " hours " + pad(minutes) + " minutes " + pad(remainingSeconds) +" seconds";
-  console.log(days, hours, minutes, remainingSeconds)
 
   if (seconds == 0) {
     clearInterval(countdownTimer);
