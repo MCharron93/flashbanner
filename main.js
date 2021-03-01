@@ -12,7 +12,7 @@ function checkTime(){
   const saleStarts = new Date(2021, 2, 1, 8, 05, 0)
   let currentDate = new Date()
   // NOTE create end sale time to compare current date & time to for difference in time conversion
-  const saleEnds = new Date(2021, 2, 1, 10, 05, 0)
+  const saleEnds = new Date(2021, 2, 1, 11, 05, 0)
 
 
   // NOTE compare if the currentDate is after saleStart time and before the saleEnd time
@@ -44,8 +44,9 @@ function timer(milliseconds) {
 
 //   NOTE removed the timer slots for days since it will not be used
 //   pad(days) + ":" + 
+//   pad(hours) + " hours " +
 
-  document.getElementById('countdown').innerHTML = pad(hours) + " hours " + pad(minutes) + " minutes " + pad(remainingSeconds) +" seconds";
+  document.getElementById('countdown').innerHTML =  pad(minutes) + " : " + pad(remainingSeconds);
 
   if (seconds == 0) {
     clearInterval(countdownTimer);
